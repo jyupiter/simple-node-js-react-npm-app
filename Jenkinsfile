@@ -4,9 +4,15 @@ pipeline {
   tools {nodejs "NodeJS"}
  
   stages {
-    stage('Example') {
+    stage('Build') {
       steps {
-        sh 'npm config ls'
+          sh 'npm install'
+        }
+      }
+      stage('Test') { 
+        steps {
+          sh './jenkins/scripts/test.sh' 
+        }
       }
     }
   }
