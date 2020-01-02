@@ -29,4 +29,5 @@ set +x
 #echo 'created your initial Pipeline as a Jenkinsfile.)'
 
 echo 'The next line publishes the application code with an authentication token stored in the .npmrc file.'
-npm publish
+#npm publish
+
