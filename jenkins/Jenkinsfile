@@ -21,9 +21,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                npm --userconfig=~/npmartifacts/.npmrc
-                pwd
-                npm config ls -l
+                sh './jenkins/scripts/deliver.sh'
             }
         }
     }

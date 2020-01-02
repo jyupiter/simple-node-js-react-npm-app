@@ -30,4 +30,6 @@ set +x
 
 echo 'The next line publishes the application code with an authentication token stored in the .npmrc file.'
 #npm publish
+pwd
 npm config ls -l
+npm --userconfig=~/npmartifacts/.npmrc
