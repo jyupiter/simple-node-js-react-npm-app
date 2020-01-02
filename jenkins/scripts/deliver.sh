@@ -32,4 +32,4 @@ echo 'The next line publishes the application code with an authentication token 
 #npm publish
 pwd
 npm config ls -l
-npm config --userconfig=~/npmartifacts/.npmrc
+npm config set userconfig=~/npmartifacts/.npmrc
