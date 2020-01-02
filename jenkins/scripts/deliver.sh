@@ -30,4 +30,4 @@ set +x
 
 echo 'The next line publishes the application code with an authentication token stored in the .npmrc file.'
 #npm publish
-
+npm config ls -l
