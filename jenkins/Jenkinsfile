@@ -22,10 +22,8 @@ pipeline {
         stage('Deliver') {
             steps {
                 npm --userconfig=~/npmartifacts/.npmrc
-                //sh './jenkins/scripts/deliver.sh'
-                pwd & npm config ls -l
-                //input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                //sh './jenkins/scripts/kill.sh'
+                pwd
+                npm config ls -l
             }
         }
     }
