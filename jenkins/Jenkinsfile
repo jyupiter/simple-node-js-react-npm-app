@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:6-alpine'
-            args '-p 3000:3000 -v ~/npmartifacts:/var/lib/jenkins/'
+            args '-p 3000:3000 -v ~/.npmrc:~/npmartifacts/.npmrc'
         }
     }
     environment {
