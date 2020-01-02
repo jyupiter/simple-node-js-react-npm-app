@@ -1,11 +1,14 @@
 {
-  "name": "my-app",
+  "name": "sample-node-application",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
+  },
+  "publishConfig":{
+    "registry": "http://100.0.128.39:8081/repository/npm-private/"
   },
   "scripts": {
     "start": "react-scripts start",
